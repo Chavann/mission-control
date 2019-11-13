@@ -1,2 +1,10 @@
 body {background-color: lightyellow
 }
+text {font-family: "courier new", monospace;
+}
+table td th {border-spacing:1em .5em ;
+  padding: 0 2em 1em 0;
+  border: 2px lightblue;
+}
+div {border-style: inset ;
+}
