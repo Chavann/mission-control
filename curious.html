@@ -1,21 +1,51 @@
 <!DOCTYPE html>
-<html>
-<body>
-fucntion showQuestions (questions, quizContainer){
-  // <p> what is ....? </p>
-  <ul 
+  <html>
+  <head>
+    <title> Curious?</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/home.jpg"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width,
+    initial scale=1.0">
+    <script
+    src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="style.CSS"/>
+  </head>
+  <body >
+    <div class="nav">
+      <ul id="navbar" class="center">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="bor" href="bored.html">Bored</a></li>
+        <li><a class ="unm" href="unmotivated.html">Unmotivated</a></li>
+        <li><a class="unc" href="uncreative.html">Uncreative</a></li>
+        <li><a class="cur" href="curious.html">Curious</a></li>
+      </ul>
+    </div>
+    <img src="images/stars.jpg" alt="Stars Banner" id="Banner" height="125" width ="1200" class="center"/>
 
-}
+    <!-- this one might work -->
+    <h3> What's the hottest planet?</h3> 
+        <div id="answer" class="button-grid">
+          <button class="button"> a. Mercury </button>
+          <button class="button"> b. Mars </button>
+          <button class="button"> c. Jupiter </button>
+          <button class="button"> d. Saturn </button>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start_button" class="start_button button"> Fun Facts Time </button>
+          <button id="next_button" class="hide"> Next </button>
+    </div>
+
+<h3> What's the closest approximate to 8? </h3>
+  <button class="button" onclick="myFunction()"> a. 1 + 1 + 1 + 1 + 1 + 1 </button>
+  <button class="button"> b. 987654321/123456789 </button>
+  <button class="button"> c. √65 </button>
+  <button class="button"> d. (5932 - 5926 + 33) / 5 </button>
 
 
-
-
-
-
-
-<div id="quiz"></div>
-<button id="submit"> Find out how ya did!</button>
-<div id="results"></div>
-
-</body>
-</html>
+  </body>
+  </html>
