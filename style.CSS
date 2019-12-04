@@ -89,6 +89,15 @@ body {
   }
 }
 
+/* table */
+
+.pill {
+  color: lightblue;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+
 /* contact */
 
 .contact ul {
@@ -300,14 +309,20 @@ body {
     overflow:auto;
 }
 
-#music, #river {
+#music, #river, #photo {
   justify-content: center;
   align-items: center;
   width: 500px;
   border-radius:20px;
 }
 
+#c, #cc, #ul_top_hypers {
+  justify-content: center;
+  align-items: center;
+  spacing: 25px;
+}
+
 #emotion_table table {
-  border-spacing: 0.5rem;
+  border-spacing: 20px;
   border-collapse: collapse;
 }
