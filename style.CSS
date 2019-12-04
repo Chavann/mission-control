@@ -29,6 +29,10 @@ h3, p{
   text-align: right;
 }
 
+.right {
+  text-align: right;
+}
+
 body {
   background-color: white;
 }
@@ -87,6 +91,7 @@ body {
     max-width: 100%;
   }
 }
+
 
 /* nav bar */
  .nav ul {
