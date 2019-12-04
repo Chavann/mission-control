@@ -2,14 +2,8 @@ script.js
 
 <script language="javascript">
 
-document.getElementsByClassName('center.buttonwrong') function incorrectfunction() {
-  alert('Incorrect!');
-}
+document.getElementById('wrong').onclick = function () {Funky()}
 
-document.getElementsByClassName('buttonright') function(){
-  alert("Correct!");
-}
-
-function incorrectfunction(){
-  alert('Incorrect!');
-}
+function Funky() {
+  document.getElementById("wrong") = "Wrong!";
+  }

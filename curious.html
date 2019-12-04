@@ -26,36 +26,28 @@
     </div>
     <img src="images/stars.jpg" alt="Stars Banner" id="Banner" height="125" width ="1200" class="center"/>
 
-<script>
-function Funky(){
-  document.getElementById('buttonwrong').innerHTML = "Wrong!";
-}
+<h3> What's the hottest planet?</h3>
 
-function Funk(){
-  document.getElementById('buttonwrong').innerHTML = "Wrong!";
-}
-</script>
+    <button id="wrong" onclick="Funky()" class="wrong"> a. Mercury </button>
+    <button id="wrong2" class="wrong" onlcick="Funky()"> b. Mars </button>
+    <button id="right" onlcick="Mati()"> c. Jupiter </button>
+    <button id="wrong3" onlcick="alert('Wrong!')"> d. Saturn </button>
 
-<script>
-function Mati(){
-  document.getElementById('buttonright').innerHTML = "Right!";
-}
-</script>
+  <h3> What's the closest approximate to 8? </h3>
+    <button type="button" class="buttonwrong" onclick="Funky()"> a. 1 + 1 + 1 + 1 + 1 + 1 </button>
+    <button type="button" class="buttonright" onclick="Mati()"> b. 987654321/123456789 </button>
+    <button onlcick="incorrectfunction()" class="buttonwrong"> c. √65 </button>
+    <button onlcick="incorrectfunction()" class="buttonwrong"> d. (5932 - 5926 + 33) / 5 </button>
 
-  <div class="center">
-    <h3> What's the hottest planet?</h3>
-      <button type="button" class="seatButton" id="buttonwrong" onclick="Funky()"> a. Mercury </button>
-      <button type="button" class="seatButton" id="buttonwrong" onlcick="Funk()"> b. Mars </button>
-      <button type="button" class="seatButton" id="buttonright" onlcick="Mati()"> c. Jupiter </button>
-      <button type="button" class="buttonwrong" onlcick="Funky()"> d. Saturn </button>
-  </div>
+  <script>
+  document.getElementsByClassName('wrong').onclick = function () {Funky()}
+    function Funky() {
+      document.getElementById("wrong", "wrong2").innerHTML = "Wrong!";
+    }
 
-<h3> What's the closest approximate to 8? </h3>
-  <button onlcick="incorrectfunction()" class="buttonwrong"> a. 1 + 1 + 1 + 1 + 1 + 1 </button>
-  <button class="buttonright"> b. 987654321/123456789 </button>
-  <button onlcick="incorrectfunction()" class="buttonwrong"> c. √65 </button>
-  <button onlcick="incorrectfunction()" class="buttonwrong"> d. (5932 - 5926 + 33) / 5 </button>
-
-
-  </body>
-  </html>
+  function Mati(){
+    document.getElementsByClassName('buttonright').innerHTML = "Right!";
+  }
+  </script>
+</body>
+</html>
