@@ -13,6 +13,10 @@ h3, p{
   margin-right: auto;
 }
 
+.left {
+  text-align: left;
+}
+
 .center {
   text-align: center;
 }
@@ -162,7 +166,7 @@ li a:hover:not(.active) {
   display: flex;
   align-items: justify;
   justify-content: center;
-} /* this doesnt work and i dont know why :( */ 
+} /* this doesnt work and i dont know why :( */
 
 /* this is on uncreative.html */
 .row {
