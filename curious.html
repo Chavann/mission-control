@@ -27,22 +27,54 @@
     <img src="images/stars.jpg" alt="Stars Banner" id="Banner" height="125" width ="1200" class="center"/>
 
 <h3> What's the hottest planet?</h3>
-    <h4> a. Mercury? </h4>
-    <h4> b. Mars? </h4>
-    <h4> c. Jupiter? </h4>
-    <h4> d. Saturn? </h4>
-    <button type="button" onlcick="myFunction()" id="J"> Answer... </button>
+    <h4> a. Mercury </h4>
+    <h4> b. Mars </h4>
+    <h4> c. Jupiter </h4>
+    <h4> d. Saturn </h4>
     <script>
-    function myFunction (){
-      document.getElementById('J').innerHTML = "Jupiter!";
+    function mineFunction() {
+      document.getElementById("J").innerHTML = "Jupiter!";
     }
     </script>
+      <button type="button" class="center" id="J" onclick="mineFunction()">Answer...</button>
 
-<h3 id="2"> What's the closest approximate to 8? </h3>
-    <button id="wrong4" onclick="Funky()"> a. 1 + 1 + 1 + 1 + 1 + 1 </button>
-    <button id="right2" onclick="Mati()"> b. 987654321/123456789 </button>
-    <button id="wrong5" onclick="Funky()"> c. √65 </button>
-    <button id="wrong6" onclick="Funcky()"> d. (5932 - 5926 + 33) / 5 </button>
+<h3> What's the closest approximate to 8?</h3>
+          <h4> a. 1 + 1 + 1 + 1 + 1 + 1  </h4>
+          <h4> b. 987654321/123456789 </h4>
+          <h4> c. √65 </h4>
+          <h4> d. (5932 - 5926 + 33) / 5 </h4>
+          <script>
+          function miFunction() {
+            document.getElementById("eight").innerHTML = "987654321/123456789!";
+          }
+          </script>
+            <button type="button" class="center" id="eight" onclick="miFunction()">Answer...</button>
+
+<h3> Antarctica is .... continent(s) with no owls. </h3>
+  <h4> a. one of two  </h4>
+  <h4> b. one of three </h4>
+  <h4> c. one of four </h4>
+  <h4> d. the only </h4>
+  <script>
+    function mFunction() {
+      document.getElementById("A").innerHTML = " the only!";
+  }
+  </script>
+  <button type="button" class="center" id="A" onclick="mFunction()">Answer...</button>
+
+<h3> What's the only lizard that has a voice? </h3>
+<h4> a. Agamas</h4>
+<h4> b. Gecko</h4>
+<h4> c. Chameleon </h4>
+<h4>d. Iguana</h4>
+<script>
+  function mnFunction() {
+    document.getElementById("B").innerHTML = "Gecko!";
+}
+</script>
+<button type="button" class="center" id="B" onclick="mnFunction()">Answer...</button>
+
+
 
 </body>
 </html>
