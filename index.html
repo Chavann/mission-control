@@ -27,7 +27,17 @@ crossorigin="anonymous"></script>
 <!-- actual page -->
   <div>
     <h3> How are you <em>  feeling  </em> today? </h3>
-    <img src="images/lazy.jpg" alt="man on ground with book on face" width="200px" height="300px" class="center">
+    <!-- i still need to fix the image grid --> 
+      <div class="row">
+        <div class="column">
+          <img src="images/lazy.jpg" width:100% alt="lazy">
+          <img src="images/curious.jpg" width:100% alt="curious">
+        </div>
+        <div class="column">
+          <img src="images/unmotivated.jpg" width:100% alt="uncreative">
+          <img src="images/sleepy.jpg" width:100% alt="unmotivated">
+        </div>
+      </div>
     <br>
     <p class="center"> Lifetimes of research have gone into finding the cure for those small lapses in the day where there is nothing to do.
       And days being as long as they are, there are many lapses. Sometimes, a whole day full of them!
@@ -43,36 +53,38 @@ crossorigin="anonymous"></script>
   <table id="emotion_table" class="table" style="width:100%">
     <tr>
       <thead>
-      <th>Select a feeling</th>
-      <th>Take a diagnosis</th>
-      <th>Solution</th>
+      <th class="justify">Select a feeling</th>
+      <th class="center">Take a diagnosis</th>
+      <th class="right">Solution</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td class="justify"> Procrastinating? </td>
       <td class="center"> Do you have an assignment with an impending deadline? </td>
-      <td > <button class="yes" id="yes_work" onclick="alert('Get Back to Work!!!')"> Yes
-           <button class="no" id="no_work" onclick="alert('Carry on, then')"> No </td>
+      <td class="right">
+           <button class="right" id="yes_work" onclick="alert('Get Back to Work!!!')"> Yes
+           <button class="left" id="no_work" onclick="alert('Carry on, then')"> No
+           </td>
     <tr>
       <td class="justify"> Bored? </td>
       <td class="center"> Have too much free time and nothing to do? </td>
-      <td > Perform a little <a href="bored.html"> Charity! </td>
+      <td class="right"> Perform a little <a href="bored.html"> Charity! </td>
     </tr>
     <tr>
       <td class="jutify"> Unmotivated? </td>
       <td class="center"> I could say just do your work, but we both know that's not going to happen </td>
-      <td > Take some <a href="unmotivated.html"> Motivation! </td>
+      <td class="right"> Take some <a href="unmotivated.html"> Motivation! </td>
     </tr>
     <tr>
       <td class="justify"> Uncreative? </td>
       <td class="center"> Sometimes, you just feel stuck and you need a little spark </td>
-      <td > Find a <a href="uncreative.html"> Spark! </td>
+      <td class="right"> Find a <a href="uncreative.html"> Spark! </td>
     </tr>
     <tr>
       <td class="justify"> Curious? </td>
       <td class="center"> The monotony of life getting you down? Try some inspiration. </td>
-      <td > A little <a href="curious.html">Inspiration! </td>
+      <td class="right"> A little <a href="curious.html">Inspiration! </td>
     </tr>
   </tbody>
   </table>
