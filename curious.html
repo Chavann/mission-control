@@ -25,12 +25,29 @@
       </ul>
     </div>
     <img src="images/stars.jpg" alt="Stars Banner" id="Banner" height="125" width ="1200" class="center"/>
+
+<script>
+function Funky(){
+  document.getElementById('buttonwrong').innerHTML = "Wrong!";
+}
+
+function Funk(){
+  document.getElementById('buttonwrong').innerHTML = "Wrong!";
+}
+</script>
+
+<script>
+function Mati(){
+  document.getElementById('buttonright').innerHTML = "Right!";
+}
+</script>
+
   <div class="center">
     <h3> What's the hottest planet?</h3>
-      <button onlcick="incorrectfunction()"> a. Mercury </button>
-      <button onlcick="incorrectfunction()" class="buttonwrong"> b. Mars </button>
-      <button class="buttonright"> c. Jupiter </button>
-      <button onlcick="incorrectfunction()" class="buttonwrong"> d. Saturn </button>
+      <button type="button" class="seatButton" id="buttonwrong" onclick="Funky()"> a. Mercury </button>
+      <button type="button" class="seatButton" id="buttonwrong" onlcick="Funk()"> b. Mars </button>
+      <button type="button" class="seatButton" id="buttonright" onlcick="Mati()"> c. Jupiter </button>
+      <button type="button" class="buttonwrong" onlcick="Funky()"> d. Saturn </button>
   </div>
 
 <h3> What's the closest approximate to 8? </h3>
