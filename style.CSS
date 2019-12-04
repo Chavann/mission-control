@@ -92,7 +92,7 @@ body {
 
 /* table */
 
-.pill {
+.pill, #tom {
   color: lightblue;
   padding: 8px 8px;
   text-decoration: none;
