@@ -70,7 +70,7 @@ body {
 
 .column img {
   margin-top: 8px;
-  vertical-align: middle;
+  vertical-align: center;
   width: 100%;
 }
 
@@ -89,6 +89,24 @@ body {
     max-width: 100%;
   }
 }
+
+@media screen and (max-width:600px) {
+.img-circle, #c {
+  -ms-flex: 100%;
+  flex:100%;
+  max-width: 100%;
+  }
+}
+
+@media screen and (max-width:600px){
+ #other {
+    -ms-flex: 100%;
+    flex:100%;
+    max-width: 100%;
+  }
+}
+
+
 
 /* table */
 
@@ -211,7 +229,7 @@ li a:hover:not(.active) {
 /* this is on uncreative.html */
 .row {
   column-count: 2;
-  column-gap: 40px;
+  column-gap: 60px;
 }
 
 .row:after {
@@ -220,7 +238,7 @@ li a:hover:not(.active) {
 }
 
 .column {
-  float: left;
+  float: center;
   width: 50%
   padding: 10px;
 }
@@ -281,7 +299,7 @@ div.absolute {
 }
 
 .column {
-  float: left;
+  float: center;
   width: 50%;
 }
 
@@ -328,6 +346,7 @@ h4, #J {
 }
 
 #emotion_table table {
-  border-spacing: 20px;
+  border-spacing: 50px;
   border-collapse: collapse;
+  border-radius: 25px;
 }
